@@ -73,7 +73,9 @@ export class NegociacaoController {
     async importaNegociacoes() {
 
         try {
-            const { NegociacaoService } = await System.import('../domain/negociacao/NegociacaoService');
+            const { NegociacaoService } = await import('../domain/negociacao/NegociacaoService');
+            // Nada que eu faça aqui, não quer dizer nada
+
     
             const service = new NegociacaoService();
     
